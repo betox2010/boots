@@ -1,5 +1,10 @@
+body{
+	font-size: 15px;
+	font-family: 'Antic', sans-serif;
+}
+
 header{
-	background-color: #242424
+	background-color: #242424;
 }
 
 h1{
@@ -16,5 +21,16 @@ h2{
 }
 
 footer{
-	background-color: #F31400
+	color:#FFFFFF;
+	background-color: #CD1101
+}
+
+h3{
+	font-family: 'BenchNine', sans-serif;
+	font-size: 24px;
+	text-align: center;
+}
+
+li{
+	text-align: center;
 }
