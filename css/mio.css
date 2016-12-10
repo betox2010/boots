@@ -66,3 +66,30 @@ h3{
 .navbar-inverse .navbar-nav>li>a:visited{
 	color: white;
 }
+
+/*Contacto*/
+
+.iconosContacto{
+	margin-top: 35px;
+	margin-bottom: 30px;
+}
+
+.iconosContacto>.glyphicon{
+	color: #B2001B;
+	font-size: 30px;
+}
+
+.google-maps{
+	position: relative;
+	padding-bottom: 350px;
+	height: 0px;
+	overflow: hidden;
+}
+
+.google-maps iframe{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100% !important;
+	height: 350px !important;
+}
