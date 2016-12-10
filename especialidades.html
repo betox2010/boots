@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/mio.css">
     <link href="https://fonts.googleapis.com/css?family=Antic|BenchNine|Roboto+Slab:700" rel="stylesheet">
 
+
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -20,7 +22,7 @@
     <![endif]-->
   </head>
   <body>
-    <header>
+        <header>
       <!--NAVEGACIÓN-->
       <nav class="navbar navbar-inverse navbar-static-top"> <!--puede ser navbar-fixed-top navbar-fixed-bottom -->
         <div class="container">
@@ -49,7 +51,11 @@
       </nav>
     </header>
 
-   <div class="container">
+
+<!--VIDEITOS -->
+  <div class="container">
+   <h2>DELI</h2>
+
      <div class="row">
       <div class="col-md-8">
         <div class="row">
@@ -57,40 +63,54 @@
             <div class="embed-responsive embed-responsive-16by9">
               <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/SH9n2gd1QAU" frameborder="0" allowfullscreen></iframe>
             </div>
-
-            <!-- CODIGO DESDE YOUTUBE NO RESPONSIVO
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/SH9n2gd1QAU" frameborder="0" allowfullscreen></iframe>
-            CODIGO DESDE YOUTUBE NO RESPONSIVO -->
-            
           </div>
         </div>
       </div>
+    </div>
 
+<!--REVISAR 
      <div class="row">
       <div class="col-md-6">
         <div class="row">
           <div class="col-md-12">
             <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/watch?v=rhAFD6sPkHg" frameborder="0" allowfullscreen></iframe>
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/rhAFD6sPkHg" frameborder="0" allowfullscreen></iframe>
             </div>
           </div>
         </div>
       </div>
 
-    <div class="row">
       <div class="col-md-6">
-        <div class="row">
           <div class="col-md-12">
             <div class="embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/watch?v=rhAFD6sPkHg" frameborder="0" allowfullscreen></iframe>
+              <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/rhAFD6sPkHg" frameborder="0" allowfullscreen></iframe>
             </div>
           </div>
         </div>
       </div>
+-->
+
+
+    <!--FACEBOOK -->
       
-      <div class="col-md-4">SIDEBAR</div>
-     </div>
+      <div class="col-md-4 hidden-xs">
+        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FKylieMexico&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+
+        <iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2FKylieMexico&width=100&layout=button_count&action=like&size=large&show_faces=false&share=false&height=21&appId" width="150" height="21" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+      </div>
    </div>
+
+
+<!-- GALERIA -->
+
+<div class="row">
+  <div class="col-md-12">
+    <p>
+      <a class="fancybox" href="1_b.jpg" data-fancybox-group="gallery" title="Lorem ipsum dolor sit amet"><img src="img/1_s.jpg" alt="" /></a>
+      <a class="fancybox" href="2_b.jpg" data-fancybox-group="gallery" title="Etiam quis mi eu elit temp"><img src="img/2_s.jpg" alt="" /></a>
+    </p>
+  </div>
+</div>
 
 
   </footer>
@@ -101,5 +121,206 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
+
+        <!--FANCYBOX -->
+
+  <!-- Add mousewheel plugin (this is optional) -->
+  <script type="text/javascript" src="lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+  <!-- Add fancyBox main JS and CSS files -->
+  <script type="text/javascript" src="source/jquery.fancybox.js?v=2.1.5"></script>
+  <link rel="stylesheet" type="text/css" href="source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+  <!-- Add Thumbnail helper (this is optional) -->
+  <link rel="stylesheet" type="text/css" href="source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+  <script type="text/javascript" src="source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function() {
+      /*
+       *  Simple image gallery. Uses default settings
+       */
+
+      $('.fancybox').fancybox();
+
+      /*
+       *  Different effects
+       */
+
+      // Change title type, overlay closing speed
+      $(".fancybox-effects-a").fancybox({
+        helpers: {
+          title : {
+            type : 'outside'
+          },
+          overlay : {
+            speedOut : 0
+          }
+        }
+      });
+
+      // Disable opening and closing animations, change title type
+      $(".fancybox-effects-b").fancybox({
+        openEffect  : 'none',
+        closeEffect : 'none',
+
+        helpers : {
+          title : {
+            type : 'over'
+          }
+        }
+      });
+
+      // Set custom style, close if clicked, change title type and overlay color
+      $(".fancybox-effects-c").fancybox({
+        wrapCSS    : 'fancybox-custom',
+        closeClick : true,
+
+        openEffect : 'none',
+
+        helpers : {
+          title : {
+            type : 'inside'
+          },
+          overlay : {
+            css : {
+              'background' : 'rgba(238,238,238,0.85)'
+            }
+          }
+        }
+      });
+
+      // Remove padding, set opening and closing animations, close if clicked and disable overlay
+      $(".fancybox-effects-d").fancybox({
+        padding: 0,
+
+        openEffect : 'elastic',
+        openSpeed  : 150,
+
+        closeEffect : 'elastic',
+        closeSpeed  : 150,
+
+        closeClick : true,
+
+        helpers : {
+          overlay : null
+        }
+      });
+
+      /*
+       *  Button helper. Disable animations, hide close button, change title type and content
+       */
+
+      $('.fancybox-buttons').fancybox({
+        openEffect  : 'none',
+        closeEffect : 'none',
+
+        prevEffect : 'none',
+        nextEffect : 'none',
+
+        closeBtn  : false,
+
+        helpers : {
+          title : {
+            type : 'inside'
+          },
+          buttons : {}
+        },
+
+        afterLoad : function() {
+          this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+        }
+      });
+
+
+      /*
+       *  Thumbnail helper. Disable animations, hide close button, arrows and slide to next gallery item if clicked
+       */
+
+      $('.fancybox-thumbs').fancybox({
+        prevEffect : 'none',
+        nextEffect : 'none',
+
+        closeBtn  : false,
+        arrows    : false,
+        nextClick : true,
+
+        helpers : {
+          thumbs : {
+            width  : 50,
+            height : 50
+          }
+        }
+      });
+
+      /*
+       *  Media helper. Group items, disable animations, hide arrows, enable media and button helpers.
+      */
+      $('.fancybox-media')
+        .attr('rel', 'media-gallery')
+        .fancybox({
+          openEffect : 'none',
+          closeEffect : 'none',
+          prevEffect : 'none',
+          nextEffect : 'none',
+
+          arrows : false,
+          helpers : {
+            media : {},
+            buttons : {}
+          }
+        });
+
+      /*
+       *  Open manually
+       */
+
+      $("#fancybox-manual-a").click(function() {
+        $.fancybox.open('1_b.jpg');
+      });
+
+      $("#fancybox-manual-b").click(function() {
+        $.fancybox.open({
+          href : 'iframe.html',
+          type : 'iframe',
+          padding : 5
+        });
+      });
+
+      $("#fancybox-manual-c").click(function() {
+        $.fancybox.open([
+          {
+            href : '1_b.jpg',
+            title : 'My title'
+          }, {
+            href : '2_b.jpg',
+            title : '2nd title'
+          }, {
+            href : '3_b.jpg'
+          }
+        ], {
+          helpers : {
+            thumbs : {
+              width: 75,
+              height: 50
+            }
+          }
+        });
+      });
+
+
+    });
+  </script>
+  <style type="text/css">
+    .fancybox-custom .fancybox-skin {
+      box-shadow: 0 0 50px #222;
+    }
+
+    body {
+      max-width: 700px;
+      margin: 0 auto;
+    }
+  </style>
+
   </body>
 </html>
